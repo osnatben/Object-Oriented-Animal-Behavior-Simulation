@@ -15,8 +15,8 @@ MOOD_HAPPY = 1 | MOOD_SCARE = 2
 
 Example:
 
-Dog happyDog = new Dog(Animal.MOOD_HAPPY);
-Cat scaredCat = new Cat(Animal.MOOD_SCARE);
+Dog happyDog = new Dog(1);
+Cat scaredCat = new Cat(2);
 
 The mood parameter determines the behavior of the animal when you call the SeyHello method.
 
