@@ -1,0 +1,15 @@
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\bin\Debug\net7.0\Object Oriented Assignment.exe
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\bin\Debug\net7.0\Object Oriented Assignment.deps.json
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\bin\Debug\net7.0\Object Oriented Assignment.runtimeconfig.json
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\bin\Debug\net7.0\Object Oriented Assignment.dll
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\bin\Debug\net7.0\Object Oriented Assignment.pdb
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\obj\Debug\net7.0\Object Oriented Assignment.csproj.AssemblyReference.cache
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\obj\Debug\net7.0\Object Oriented Assignment.GeneratedMSBuildEditorConfig.editorconfig
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\obj\Debug\net7.0\Object Oriented Assignment.AssemblyInfoInputs.cache
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\obj\Debug\net7.0\Object Oriented Assignment.AssemblyInfo.cs
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\obj\Debug\net7.0\Object Oriented Assignment.csproj.CoreCompileInputs.cache
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\obj\Debug\net7.0\Object Oriented Assignment.dll
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\obj\Debug\net7.0\refint\Object Oriented Assignment.dll
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\obj\Debug\net7.0\Object Oriented Assignment.pdb
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\obj\Debug\net7.0\Object Oriented Assignment.genruntimeconfig.cache
+D:\לימודי הנדסאים\Object Oriented Assignment\Object Oriented Assignment\Object Oriented Assignment\obj\Debug\net7.0\ref\Object Oriented Assignment.dll
