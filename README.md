@@ -10,8 +10,11 @@ A C# project demonstrating OOP principles through different animal behaviors.
 - Usage of constants and readonly fields.
 
 Usage: When initializing a specific animal, you need to provide its current mood as an integer:
+
 MOOD_HAPPY = 1 | MOOD_SCARE = 2
+
 Example:
+
 Dog happyDog = new Dog(Animal.MOOD_HAPPY);
 Cat scaredCat = new Cat(Animal.MOOD_SCARE);
 
