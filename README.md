@@ -26,7 +26,7 @@ Cat scaredCat = new Cat(2);
 
 Frog neutralFrog = new Frog(3); // Neutral mood
 
-// Change the mood later using the SET method
+Change the mood later using the SET method
 happyDog.SetMood(2); // Changes mood to scared
 
 The mood parameter determines the behavior of the animal when you call the SayHello method.
