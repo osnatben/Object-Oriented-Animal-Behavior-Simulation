@@ -10,6 +10,7 @@ namespace Object_Oriented_Assignment
     {
         public Frog(int mood) : base(false, false, mood) { }
 
+
         private readonly int NumberOfLegs = 4;
 
         public int GetNumberOfLegs()
@@ -27,6 +28,7 @@ namespace Object_Oriented_Assignment
             {
                 Console.WriteLine("plop into the water");
             }
+            
         }       
 
         public bool HasGills()

@@ -16,25 +16,32 @@ namespace Object_Oriented_Assignment
         public int GetNumberOfLegs()
         {
             return NumberOfLegs;
-        }
+        }      
 
         public override void SeyHello()
         {
-            Console.WriteLine("meow~");
+            if (Mood == MOOD_HAPPY)
+            {
+                Console.WriteLine("urr, purr");
+            }
+            else if (Mood == MOOD_SCARE)
+            {
+                Console.WriteLine("hiss");
+            }
+            else
+            {
+                Console.WriteLine("meow~");
+            }
+
         }
 
         public override void SeyHello(int mood)
         {
-            if (mood == MOOD_HAPPY)
-            {
-                Console.WriteLine("purr, purr");
-            }
-            else if (mood == MOOD_SCARE)
-            {
-                Console.WriteLine("hiss");
-            }
+            Mood = mood;
+            SeyHello();
         }
 
-        
+
+
     }
 }
