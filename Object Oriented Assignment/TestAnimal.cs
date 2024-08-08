@@ -1,12 +1,14 @@
+using System;
+
 namespace Object_Oriented_Assignment
 {
     internal class TestAnimal
     {
         static void Main(string[] args)
         {
-            int arraySize = 3;
+            int arraySize = 9;
             Animal[] animals = new Animal[arraySize];
-
+            
             // A call to a function that will initialize the array
             InitializeAnimals(animals);
 
@@ -17,6 +19,15 @@ namespace Object_Oriented_Assignment
                 animal.SeyHello();
                 animal.SeyHello(Animal.MOOD_HAPPY);
                 animal.SeyHello(Animal.MOOD_SCARE);
+
+                //Mood change to scared mode
+                animal.SetMood(Animal.MOOD_SCARE);
+                animal.SeyHello();
+
+                //Changing the mood to a happy state
+                animal.SetMood(Animal.MOOD_HAPPY);
+                animal.SeyHello();
+
                 if (animal is ILand)
                 {
                     ILand landAnimal = (ILand)animal;
@@ -30,25 +41,30 @@ namespace Object_Oriented_Assignment
                 }
                 Console.WriteLine();
             }
+
+
         }
 
         // A function to initialize an array
         static void InitializeAnimals(Animal[] animals)
         {
+            Random random = new Random();
+
             for (int i = 0; i < animals.Length; i++)
             {
+                int mood = random.Next(0, 3);
 
                 if (i % 3 == 0)
                 {
-                    animals[i] = new Cat(Animal.MOOD_HAPPY);
+                    animals[i] = new Cat(mood);
                 }
                 else if (i % 2 == 0)
                 {
-                    animals[i] = new Dog(Animal.MOOD_SCARE);
+                    animals[i] = new Dog(mood);
                 }
                 else
                 {
-                    animals[i] = new Frog(Animal.MOOD_HAPPY);
+                    animals[i] = new Frog(mood);
                 }
             }
         }

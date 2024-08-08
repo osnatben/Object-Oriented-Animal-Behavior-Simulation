@@ -19,19 +19,25 @@ namespace Object_Oriented_Assignment
 
         public override void SeyHello()
         {
-            Console.WriteLine("wagging their tails");
+            if (Mood == MOOD_HAPPY)
+            {
+                Console.WriteLine("bark loudly");
+            }
+            else if (Mood == MOOD_SCARE)
+            {
+                Console.WriteLine("whooping");
+            }
+            else
+            {
+                Console.WriteLine("wagging their tails");
+            }
+            
         }
 
         public override void SeyHello(int mood)
         {
-            if (mood == MOOD_HAPPY)
-            {
-                Console.WriteLine("bark loudly");
-            }
-            else if (mood==MOOD_SCARE)
-            {
-                Console.WriteLine("whooping");
-            }
+            Mood = mood;
+            SeyHello();
         }
 
 

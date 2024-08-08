@@ -14,7 +14,7 @@ namespace Object_Oriented_Assignment
         protected readonly bool Carnivorous;
         public const int MOOD_HAPPY = 1;
         public const int MOOD_SCARE = 2;
-        protected readonly int Mood;
+        protected int Mood;
 
         public Animal(bool mammals, bool carnivorous,int mood)
         {
@@ -27,10 +27,13 @@ namespace Object_Oriented_Assignment
         public abstract void SeyHello(int mood) ;
 
         public bool IsMammals() { return Mammals; }
-        public void SetMammals(bool mammals) { } 
+        public void SetMammals(bool mammals) { }
 
         public bool IsCarnivorous() { return Carnivorous; } 
-        public void SetCarnivorous(bool carnivorous) { } 
-        
-    }
+        public void SetCarnivorous(bool carnivorous) { }
+
+        public void SetMood(int mood)
+        {
+            Mood = mood;
+        }
 }
