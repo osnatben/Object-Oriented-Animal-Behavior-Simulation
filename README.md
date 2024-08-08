@@ -37,7 +37,3 @@ Clone the repository and open it in your preferred C# development environment (e
 
 ```bash
 git clone https://github.com/osnatben/Animal-Behavior-Simulation.git
-
-
-
- 
