@@ -20,8 +20,10 @@ You can also initialize the animal with any integer other than 1 or 2 to represe
 
 **Example:**
 
-Dog happyDog = new Dog(1);
-Cat scaredCat = new Cat(2);
+Dog happyDog = new Dog(1); 
+
+Cat scaredCat = new Cat(2);  
+
 Frog neutralFrog = new Frog(3); // Neutral mood
 
 // Change the mood later using the SET method
