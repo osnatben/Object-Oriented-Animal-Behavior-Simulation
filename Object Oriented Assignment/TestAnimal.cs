@@ -1,38 +1,56 @@
-﻿namespace Object_Oriented_Assignment
+namespace Object_Oriented_Assignment
 {
     internal class TestAnimal
     {
         static void Main(string[] args)
         {
-            
-            Dog dog = new Dog(1);
-            Cat cat = new Cat(1);
-            Frog frog = new Frog(1);
+            int arraySize = 3;
+            Animal[] animals = new Animal[arraySize];
 
-            Console.WriteLine("Dog:");
-            dog.SeyHello();            
-            dog.SeyHello(Dog.MOOD_HAPPY);
-            dog.SeyHello(Dog.MOOD_SCARE); 
-            Console.WriteLine($"Is Mammals: {dog.IsMammals()}");
-            Console.WriteLine($"Is Carnivorous: {dog.IsCarnivorous()}");
-            Console.WriteLine($"Number of Legs: {dog.GetNumberOfLegs()}");
+            // A call to a function that will initialize the array
+            InitializeAnimals(animals);
 
-            Console.WriteLine("\nCat:");
-            cat.SeyHello();
-            cat.SeyHello(Cat.MOOD_HAPPY);
-            cat.SeyHello(Cat.MOOD_SCARE);
-            Console.WriteLine($"Is Mammals: {cat.IsMammals()}");
-            Console.WriteLine($"Is Carnivorous: {cat.IsCarnivorous()}");
-            Console.WriteLine($"Number of Legs: {cat.GetNumberOfLegs()}");
+            // Go through an array and read the functions of each animal
+            foreach (var animal in animals)
+            {
+                Console.WriteLine($"Hey, I'm {animal.GetType().Name}");
+                animal.SeyHello();
+                animal.SeyHello(Animal.MOOD_HAPPY);
+                animal.SeyHello(Animal.MOOD_SCARE);
+                if (animal is ILand)
+                {
+                    ILand landAnimal = (ILand)animal;
+                    Console.WriteLine($"Number of legs: {landAnimal.GetNumberOfLegs()}");
+                }
 
-            Console.WriteLine("\nFrog:");            
-            frog.SeyHello(Frog.MOOD_HAPPY);            
-            frog.SeyHello(Frog.MOOD_SCARE);
-            Console.WriteLine($"Is Mammals: {frog.IsMammals()}");
-            Console.WriteLine($"Is Carnivorous: {frog.IsCarnivorous()}");
-            Console.WriteLine($"Number of Legs: {frog.GetNumberOfLegs()}");
-            Console.WriteLine($"Has Lays Eggs: {frog.HasLaysEggs()}");
-            Console.WriteLine($"Has Gills: {frog.HasGills()}");
+                if (animal is IWater waterAnimal)
+                {
+                    Console.WriteLine($"Lays eggs: {waterAnimal.HasLaysEggs()}");
+                    Console.WriteLine($"Has gills: {waterAnimal.HasGills()}");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        // A function to initialize an array
+        static void InitializeAnimals(Animal[] animals)
+        {
+            for (int i = 0; i < animals.Length; i++)
+            {
+
+                if (i % 3 == 0)
+                {
+                    animals[i] = new Cat(Animal.MOOD_HAPPY);
+                }
+                else if (i % 2 == 0)
+                {
+                    animals[i] = new Dog(Animal.MOOD_SCARE);
+                }
+                else
+                {
+                    animals[i] = new Frog(Animal.MOOD_HAPPY);
+                }
+            }
         }
     }
 }
