@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 
 namespace Object_Oriented_Assignment
 {

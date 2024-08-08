@@ -36,7 +36,4 @@ namespace Object_Oriented_Assignment
         {
             Mood = mood;
         }
-
-
-    }
 }
