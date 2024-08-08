@@ -27,9 +27,9 @@ namespace Object_Oriented_Assignment
         public abstract void SeyHello(int mood) ;
 
         public bool IsMammals() { return Mammals; }
-        public void SetMammals(bool mammals) { } // האם יונק
+        public void SetMammals(bool mammals) { } 
 
-        public bool IsCarnivorous() { return Carnivorous; } //טורף
+        public bool IsCarnivorous() { return Carnivorous; } 
         public void SetCarnivorous(bool carnivorous) { } 
         
     }
